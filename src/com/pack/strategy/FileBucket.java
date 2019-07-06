@@ -1,6 +1,8 @@
 package com.pack.strategy;
 
-import com.javarush.task.task33.task3310.Helper;
+
+import com.pack.ExceptionHandler;
+import com.pack.Helper;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -13,7 +15,7 @@ public class FileBucket {
 
     public FileBucket() {
         try {
-            this.path = Files.createTempFile("/home/code/MyFolder/", Helper.generateRandomString());
+            path = Files.createTempFile("t" + Helper.generateRandomString(),".txt");
             Files.deleteIfExists(path);
             Files.createFile(path);
             path.toFile().deleteOnExit();
@@ -32,28 +34,35 @@ public class FileBucket {
     }
 
     public void putEntry(Entry entry){
-        for (Entry e = entry; e != null; e = e.next) {
-            try {
-                ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(path));
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(path));
+            for (Entry e = entry; e != null; e = e.next) {
                 oos.writeObject(e);
-            } catch (IOException e1) {
-                e1.printStackTrace();
             }
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
     }
 
-    public Entry getEntry(){
-        Entry outEntry = null;
-        if(getFileSize() > 0) {
-            try {
-                ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(path));
-                outEntry = (Entry) ois.readObject();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+public Entry getEntry() {
+    if (getFileSize() == 0) return null;
+    Entry entry = null;
+
+    try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(path))) {
+        entry = (Entry) ois.readObject();
+        Entry tmp = entry.next;
+        while (tmp != null) {
+            tmp = (Entry) ois.readObject();
+            tmp = tmp.next;
         }
-        return outEntry;
+    } catch (IOException e) {
+        ExceptionHandler.log(e);
+    } catch (ClassNotFoundException e) {
+        ExceptionHandler.log(e);
     }
+
+    return entry;
+}
 
     public void remove(){
         try {

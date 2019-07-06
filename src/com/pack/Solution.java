@@ -1,5 +1,6 @@
 package com.pack;
 
+import com.pack.strategy.FileStorageStrategy;
 import com.pack.strategy.HashMapStorageStrategy;
 import com.pack.strategy.OurHashMapStorageStrategy;
 import com.pack.strategy.StorageStrategy;
@@ -55,7 +56,9 @@ public class Solution {
     public static void main(String[] args){
         HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
         OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
-        testStrategy(hashMapStorageStrategy, 10000);
-        testStrategy(ourHashMapStorageStrategy, 10000);;
+        FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
+        testStrategy(hashMapStorageStrategy, 1000);
+        testStrategy(ourHashMapStorageStrategy, 1000);
+        testStrategy(fileStorageStrategy, 5000);
     }
 }
