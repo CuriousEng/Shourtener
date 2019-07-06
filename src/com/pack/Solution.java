@@ -1,6 +1,7 @@
 package com.pack;
 
 import com.pack.strategy.HashMapStorageStrategy;
+import com.pack.strategy.OurHashMapStorageStrategy;
 import com.pack.strategy.StorageStrategy;
 
 import java.util.Date;
@@ -53,6 +54,8 @@ public class Solution {
 
     public static void main(String[] args){
         HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
+        OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
         testStrategy(hashMapStorageStrategy, 10000);
+        testStrategy(ourHashMapStorageStrategy, 10000);;
     }
 }
