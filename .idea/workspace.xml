@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc64732-6052-4d5f-bc01-e34fb3568dd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/pack/strategy/OurHashBiMapStorageStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pack/strategy/HashBiMapStorageStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UrlShortener/com/pack/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UrlShortener/com/pack/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlShortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UrlShortener.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pack/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pack/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pack/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            <state relative-caret-position="520">
+              <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,20 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/OurHashBiMapStorageStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="40" lean-forward="true" selection-start-line="4" selection-end-line="40" />
+              <caret line="40" selection-start-line="4" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/Entry.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/HashBiMapStorageStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="310">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="3" selection-end-line="43" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -94,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/OurHashMapStorageStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="503">
-              <caret line="115" column="60" lean-forward="true" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+              <caret line="115" column="60" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -102,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/FileStorageStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="280">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -112,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/FileBucket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1095">
-              <caret line="73" column="1" lean-forward="true" selection-start-line="3" selection-end-line="73" selection-end-column="1" />
+              <caret line="73" column="1" selection-start-line="3" selection-end-line="73" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/com/pack/strategy/FileStorageStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/pack/strategy/OurHashBiMapStorageStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/pack/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/pack/strategy/HashBiMapStorageStrategy.java" />
       </list>
     </option>
   </component>
@@ -186,12 +188,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562432227590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562434817780" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -246,16 +252,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562328193361</updated>
-      <workItem from="1562328203999" duration="15072000" />
+      <workItem from="1562328203999" duration="15901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15072000" />
+    <option name="totallyTimeSpent" value="15901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -318,7 +323,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/OurHashMapStorageStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
-          <caret line="115" column="60" lean-forward="true" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+          <caret line="115" column="60" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -332,17 +337,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/FileBucket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
-          <caret line="73" column="1" lean-forward="true" selection-start-line="3" selection-end-line="73" selection-end-column="1" />
+          <caret line="73" column="1" selection-start-line="3" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/FileStorageStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
@@ -362,20 +360,34 @@
     <entry file="file://$PROJECT_DIR$/src/com/pack/ExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/OurHashBiMapStorageStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" selection-start-line="4" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/FileStorageStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pack/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        <state relative-caret-position="520">
+          <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/OurHashBiMapStorageStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/com/pack/strategy/HashBiMapStorageStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" lean-forward="true" selection-start-line="4" selection-end-line="40" />
+        <state relative-caret-position="310">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="3" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -408,7 +420,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.slf4j:slf4j-api:1.7.23</last-edited>
+          <last-edited>com.google.guava:guava:19.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -445,6 +457,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>com.google.guava:guava:19.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
