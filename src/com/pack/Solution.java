@@ -1,9 +1,6 @@
 package com.pack;
 
-import com.pack.strategy.FileStorageStrategy;
-import com.pack.strategy.HashMapStorageStrategy;
-import com.pack.strategy.OurHashMapStorageStrategy;
-import com.pack.strategy.StorageStrategy;
+import com.pack.strategy.*;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -57,8 +54,10 @@ public class Solution {
         HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
         OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
         FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
-        testStrategy(hashMapStorageStrategy, 1000);
-        testStrategy(ourHashMapStorageStrategy, 1000);
-        testStrategy(fileStorageStrategy, 5000);
+        OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
+        testStrategy(hashMapStorageStrategy, 10000);
+        testStrategy(ourHashMapStorageStrategy, 10000);
+        testStrategy(ourHashBiMapStorageStrategy, 10000);
+        testStrategy(fileStorageStrategy, 2000);
     }
 }
