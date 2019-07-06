@@ -56,10 +56,13 @@ public class Solution {
         FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
         OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
         HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
+        DualHashBidiMapStorageStrategy dualHashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
+
         testStrategy(hashMapStorageStrategy, 10000);
         testStrategy(ourHashMapStorageStrategy, 10000);
         testStrategy(ourHashBiMapStorageStrategy, 10000);
         testStrategy(fileStorageStrategy, 2000);
         testStrategy(hashBiMapStorageStrategy, 10000);
+        testStrategy(dualHashBidiMapStorageStrategy, 10000);
     }
 }
