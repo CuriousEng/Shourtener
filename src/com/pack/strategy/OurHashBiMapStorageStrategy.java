@@ -24,17 +24,11 @@ public class OurHashBiMapStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
-        if (v2k.containsValue( value )) {
-            return v2k.get(value);
-        }
-        return null;
+        return v2k.get(value);
     }
 
     @Override
     public String getValue(Long key) {
-        if (k2v.containsKey( key )) {
-            return k2v.get(key);
-        }
-        return null;
+        return k2v.get(key);
     }
 }

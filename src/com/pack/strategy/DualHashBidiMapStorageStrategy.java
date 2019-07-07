@@ -27,16 +27,17 @@ public class DualHashBidiMapStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
-        return (Long)data.getKey(value);
-        // }
-        //  return null;
+        if (data.containsValue( value )){
+            return (Long)data.getKey(value);
+        }
+        return null;
     }
 
     @Override
     public String getValue(Long key) {
-        //if (k2v.containsKey( key )) {
-        return (String) data.get(key);
-        // }
-        // return null;
+        if (data.containsKey( key )) {
+            return (String) data.get(key);
+        }
+        return null;
     }
 }

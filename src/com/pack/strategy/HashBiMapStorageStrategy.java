@@ -27,11 +27,7 @@ public class HashBiMapStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
-        HashBiMap<String, Long> dt = (HashBiMap<String, Long>) data.inverse();
-        if (data.containsValue( value )) {
-            return dt.get(value);
-        }
-        return null;
+        return (Long) data.inverse().get(value);
     }
 
     @Override
