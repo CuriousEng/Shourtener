@@ -6,8 +6,9 @@ import java.sql.Statement;
 
 public class DBConnection {
     private Statement stmt;
+    private static DBConnection dbConnection;
 
-    public DBConnection() {
+    private DBConnection() {
         try {
             String url = "jdbc:postgresql://localhost:5432/lessons";
             String login = "author";
@@ -19,7 +20,15 @@ public class DBConnection {
         }
     }
 
+    public static DBConnection getInstance(){
+        if (dbConnection == null){
+            dbConnection = new DBConnection();
+            return dbConnection;
+        } else return dbConnection;
+    }
+
     public Statement getStatement() {
         return stmt;
     }
 }
+

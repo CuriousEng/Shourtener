@@ -10,7 +10,7 @@ public class DataBaseStorageStrategy implements StorageStrategy {
 
 
     public DataBaseStorageStrategy() {
-        DBConnection dbConnection = new DBConnection();
+        DBConnection dbConnection = DBConnection.getInstance();
         stmt = dbConnection.getStatement();
     }
 
