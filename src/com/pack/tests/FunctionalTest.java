@@ -71,4 +71,11 @@ public class FunctionalTest {
         Shortener shortener = new Shortener(ourHashBiMapStorageStrategy);
         testStorage(shortener);
     }
+
+    @Test
+    public void testDataBaseStorageStrategy() {
+        DataBaseStorageStrategy dataBaseStorageStrategy = new DataBaseStorageStrategy();
+        Shortener shortener = new Shortener(dataBaseStorageStrategy);
+        testStorage(shortener);
+    }
 }
